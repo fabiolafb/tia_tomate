@@ -1,0 +1,23 @@
+@import "../utilities/mixins";
+
+.nav {
+    width: 100%;
+    background-color: $fondo-principal;
+    color: $color-titulo;
+    text-align: center;
+    height: 28rem;
+    font-size: $tamano-titulo;
+    @include d-flex;
+
+    &__delgada {
+        font-weight: lighter;
+    }
+}
+/* --- media query mobile --- */    
+@media (max-width: 576px) {
+    .nav {
+        font-size: 2rem;
+        height: 23rem;
+    }
+}
+

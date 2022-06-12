@@ -1,0 +1,66 @@
+@import "../utilities/mixins";
+
+.main {   
+    width: 100%;
+    @include d-flex;
+    background-color: $fondo-secundario;
+    
+    &__nos {
+    width: 100%;
+    height: 9rem;
+    background-color: $fondo-principal;
+    color: $color-titulo;
+    font-size: $tamano-titulo2;
+    @include d-flex;
+    } 
+
+    &__card {
+        width: 100%;
+        height: 35rem;
+        @include flex-card;
+        padding-top: 2rem;
+
+        img {
+            width: $ancho-imagen2;
+                }
+        h3 {
+            @include subtitulo-card;
+            padding: 1.5rem 0;
+            }  
+        p {
+            @include parrafo-card;
+            }  
+        &--parrafo {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* --- media query mobile --- */    
+@media (max-width: 576px) {
+    .main {
+        &__nos {
+            height: 5rem;
+            font-size: 1.8rem;
+        } 
+
+        &__card {
+            height: 28rem;
+            img {
+                width: 60%;
+                padding-top: 1.2rem;
+                }
+            h3 {
+                @include subtitulo-card-mq;
+                padding: 1rem 0;
+            }    
+            p {
+                @include parrafo-card-mq;
+                margin: none;
+            } 
+            &--parrafo {
+                margin: 0m;
+            }
+        }
+    }
+}
