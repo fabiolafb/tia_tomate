@@ -284,7 +284,11 @@ article a:hover {
   }
   .main__card img {
     width: 60%;
+    height: 40%;
     padding-top: 1.2rem;
+  }
+  .main__card .main__card--img {
+    height: 42%;
   }
   .main__card h3 {
     color: #686963;

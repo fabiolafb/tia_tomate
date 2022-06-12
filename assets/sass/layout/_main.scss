@@ -48,8 +48,12 @@
             height: 28rem;
             img {
                 width: 60%;
+                height: 40%;
                 padding-top: 1.2rem;
                 }
+            .main__card--img {
+                height: 42%;
+            }
             h3 {
                 @include subtitulo-card-mq;
                 padding: 1rem 0;
